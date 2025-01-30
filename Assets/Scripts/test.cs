@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class test : MonoBehaviour
 {
+
+    public AudioSource audioSource;
+    public AudioClip clip;
     // Start is called before the first frame update
     void Start()
     {
@@ -14,5 +17,16 @@ public class test : MonoBehaviour
     void Update()
     {
         
+        if (Input.GetKey(KeyCode.Space))
+        {
+            if (audioSource.isPlaying == false)
+            {
+                audioSource.PlayOneShot(clip);
+            }
+            
+
+        }
+
+
     }
 }
