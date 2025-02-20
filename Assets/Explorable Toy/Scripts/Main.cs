@@ -27,7 +27,7 @@ public class Main : MonoBehaviour
         
     }
 
-    void letEmLoose()
+    public void letEmLoose()
     {
         Color colour = Color.HSVToRGB(hueSlider.value, 1.0f, 1.0f);
         float scale = sizeSlider.value;
