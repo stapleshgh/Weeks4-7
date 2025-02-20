@@ -131,6 +131,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   acceleration: 0
   speed: 0.02
-  maxSpeed: 0.1
+  maxSpeed: 0.09
   timer: 20
   color: {r: 0.21226418, g: 0.52539444, b: 1, a: 1}
