@@ -18,6 +18,7 @@ public class Main : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        //adds the glimbo release function as a listener to the button object
         spawnButton.onClick.AddListener(letEmLoose);
     }
 
@@ -29,6 +30,7 @@ public class Main : MonoBehaviour
 
     public void letEmLoose()
     {
+        //function is called using values from the UI
         Color colour = Color.HSVToRGB(hueSlider.value, 1.0f, 1.0f);
         float scale = sizeSlider.value;
         float speed = speedSlider.value;
